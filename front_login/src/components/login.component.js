@@ -1,6 +1,30 @@
 import React, { Component } from "react";
 
+//login check
+import validateLogin from "../Function/login";
+
 export default class Login extends Component {
+
+   /* constructor(){
+        super();
+        this.state = {
+            userName: '',
+            password: '',
+            loginFailedMessage: '',
+
+        }
+        this.handleLogin = this.handleLogin.bind(this);
+    }
+
+    handleLogin = (userName,password)=> {
+        if (validateLogin(userName,password)){
+            this.setState({userName,password});
+            console.log(this.state);
+        } else {
+            this.setState({loginFailedMessage: 'login failed'});
+        }
+    }*/
+
     render() {
         return (
             <form>
